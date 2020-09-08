@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './core/Layout'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Layout>
+            <div className="col-md-6 offset-md-3 text-center">
+                <h1 className=" pt-4 pb-2">React/MongoDB Login Authentication Boilerplate</h1>
+                <hr />
+                <h2>MERN STACK</h2>
+                <hr />
+                <p className="pt-5 lead">Thank you for visiting my login website. Please signup and enjoy the functionality</p> 
+            </div>
+        </Layout>
+    );
+};
 
 export default App;
